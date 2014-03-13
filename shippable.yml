@@ -12,6 +12,7 @@ install:
   - npm install expect.js
   - npm install should
   - npm install supertest
+  - npm install nodeunit
   - npm install underscore
 script:
   - nodeunit test/testSumFunc.js

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form#formGetNumbers(name="getNums", method="post", action="/user")
+    | Enter first number:
+    input#txt1(type='text', name='text1')
+    br
+    | Enter second number:
+    input#txt2(type='text', name='text2')
+    br
+    | Sum
+    button(name='submit')
+    br
+    p The sum is #{demo}
+

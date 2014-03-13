@@ -5,7 +5,7 @@ var expect = require('expect.js');
 
 describe('Routing', function() {
 
-	var url = "http://localhost:3000";
+	var url = "http://localhost:8000";
 	before(function(done) {
 
 		done();

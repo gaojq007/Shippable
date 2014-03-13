@@ -12,5 +12,7 @@ install:
   - npm install expect.js
   - npm install should
   - npm install supertest
+before_script:
+  - node app.js
 script:
-  - mocha 
+  - mocha

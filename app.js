@@ -37,7 +37,7 @@ app.post('/sum', function(req, res) {
 	var num1 = req.body.text1;
 	var num2 = req.body.text2;
 	var result = sum.sum(num1, num2);
-	res.send(result.toString());
+	res.send({sum: parseInt(result)});
 });
 
 http.createServer(app).listen(app.get('port'), function(){

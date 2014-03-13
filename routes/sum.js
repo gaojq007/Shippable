@@ -4,7 +4,7 @@
  */
 
 exports.sum = function sum(a, b) {
-
+	console.log("Hi...");
 	return (parseInt(a)+parseInt(b)).toString();
 /*	return function(req, res) {
 		var num1 = req.body.text1;

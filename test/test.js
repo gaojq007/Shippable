@@ -21,12 +21,12 @@ describe('Routing', function() {
 		};
 
 		request(url)
-			.post('/sum1')
+			.post('/sum')
 			.send(input)
 			.end(function(err, res) {
 				if(err) throw err;
 				else { 
-					expect(res.status).to.eql(200);	
+					expect(res.status).to.eql(200);
 				}
 				done();
 			});

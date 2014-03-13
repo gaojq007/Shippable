@@ -3,7 +3,7 @@ language: node_js
 node_js: 
   - 0.8.21
 # Modules to install
-before_install:
+install:
   - npm install express
   - npm install mocha
   - npm install assert

@@ -5,7 +5,7 @@
 
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
+var sum = require('./routes/sum');
 var http = require('http');
 var path = require('path');
 
@@ -31,10 +31,13 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.post('/user', function(req, res) {
+//app.post('/sum', sum.sum());
+
+app.post('/sum', function(req, res) {
 	var num1 = req.body.text1;
 	var num2 = req.body.text2;
-	res.send("Sum: " + (parseInt(num1)+parseInt(num2)).toString());
+	var result = sum.sum(num1, num2);
+	res.send(result.toString());
 });
 
 http.createServer(app).listen(app.get('port'), function(){

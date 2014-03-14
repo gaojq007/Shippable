@@ -16,5 +16,7 @@ install:
   - npm install underscore
 before_script:
   - mkdir shippable/codecoverage
+script:
+  - ./node_modules/.bin/mocha -u tdd
 "after_success":
  - git push git@heroku.com:shippable.git master

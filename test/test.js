@@ -44,11 +44,11 @@ describe('Routing', function() {
 
 	suite('sum', function() {
 		test('sum should return the sum of two numbers', function() {
-			assert.equal(inputs[0].text1 + inputs[0].text2, 5);
+			assert.equal(inputs[0].text1 + inputs[0].text2, 10);
 		});
 		
 		test('sum should return the sum of two numbers', function() {
-			assert.equal(inputs[0].text1 + inputs[0].text2, 10);
+			assert.equal(inputs[1].text1 + inputs[1].text2, 14);
 		});
 
 	});

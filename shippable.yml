@@ -17,3 +17,5 @@ install:
 "scripts": {
  "test":"mocha"
 }
+"after_success":
+ - git push git@heroku.com:https://github.com/supraja/Shippable.git master

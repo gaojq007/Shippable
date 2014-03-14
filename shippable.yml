@@ -14,10 +14,7 @@ install:
   - npm install supertest
   - npm install nodeunit
   - npm install underscore
-before_script":
-  - node app.js
-"scripts": {
- "test":"mocha"
-}
+before_script:
+  - mkdir shippable/codecoverage
 "after_success":
  - git push git@heroku.com:shippable.git master

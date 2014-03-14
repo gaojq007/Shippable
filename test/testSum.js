@@ -36,7 +36,6 @@ describe('Routing', function() {
 		});
 	});
 });
-*/
 
 suite('sum', function() {
                 test('sum should return the sum of two numbers', function() {
@@ -48,4 +47,4 @@ suite('sum', function() {
                 });
 
         });
-
+*/

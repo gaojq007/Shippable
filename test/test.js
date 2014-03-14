@@ -46,6 +46,11 @@ describe('Routing', function() {
 		test('sum should return the sum of two numbers', function() {
 			assert.equal(inputs[0].text1 + inputs[0].text2, 5);
 		});
+		
+		test('sum should return the sum of two numbers', function() {
+			assert.equal(inputs[0].text1 + inputs[0].text2, 10);
+		});
+
 	});
 
 

@@ -2,6 +2,8 @@ var should = require('should');
 var assert = require('assert');
 var request = require('supertest');
 var expect = require('expect.js');
+var inputs = require("../config.json").input;
+var sum = require('../routes/sum').sum;
 
 /*
 describe('Routing', function() {
@@ -35,3 +37,15 @@ describe('Routing', function() {
 	});
 });
 */
+
+suite('sum', function() {
+                test('sum should return the sum of two numbers', function() {
+                        assert.equal(inputs[0].text1 + inputs[0].text2, 11);
+                });
+
+                test('sum should return the sum of two numbers', function() {
+                        assert.equal(inputs[1].text1 + inputs[1].text2, 15);
+                });
+
+        });
+

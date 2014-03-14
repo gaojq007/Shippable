@@ -8,7 +8,7 @@ var sum = require('../routes/sum').sum;
 /*
 describe('Routing', function() {
 
-	var url = "http://localhost:8000";
+	var url = "shippable.herokuapp.com";
 	before(function(done) {
 
 

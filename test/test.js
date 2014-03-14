@@ -5,10 +5,10 @@ var expect = require('expect.js');
 var inputs = require("../config.json").input;
 var sum = require('../routes/sum').sum;
 
-/*
+
 describe('Routing', function() {
 
-	var url = "http://localhost:8000";
+	var url = "http://shippable.herokuapp.com/";
 	before(function(done) {
 
 		done();
@@ -40,7 +40,6 @@ describe('Routing', function() {
 		});
 	});
 });
-*/
 
 	suite('sum', function() {
 		test('sum should return the sum of two numbers', function() {

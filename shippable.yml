@@ -14,6 +14,8 @@ install:
   - npm install supertest
   - npm install nodeunit
   - npm install underscore
+before_script":
+  - node app.js
 "scripts": {
  "test":"mocha"
 }

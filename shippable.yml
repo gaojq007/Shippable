@@ -18,4 +18,4 @@ install:
  "test":"mocha"
 }
 "after_success":
- - git push git@heroku.com:shippable.git
+ - git push git@heroku.com:shippable.git master

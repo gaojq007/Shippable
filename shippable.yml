@@ -20,8 +20,7 @@ before_script:
 script:
   - ./node_modules/.bin/mocha -u tdd
 after_script:
-  - after_script:
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
-"after_success":
+after_success:
  - git push git@heroku.com:shippable.git master

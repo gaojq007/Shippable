@@ -48,7 +48,7 @@ describe('Routing', function() {
 		});
 		
 		test('sum should return the sum of two numbers', function() {
-			assert.equal(inputs[1].text1 + inputs[1].text2, 14);
+			assert.equal(inputs[1].text1 + inputs[1].text2, 15);
 		});
 
 	});
